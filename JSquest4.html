@@ -1,0 +1,22 @@
+<html>
+
+<body>
+
+<p id="demo"></p>
+
+<script>
+
+    counterFunc = (counter) => {
+    if (counter > 100) {
+      counter = 0;
+    }else {
+      counter++;
+    }
+    
+    return counter;
+  }
+document.getElementById("demo").innerHTML = counterFunc(76);
+</script>
+
+</body>
+</html>

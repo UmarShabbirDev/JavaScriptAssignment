@@ -1,0 +1,23 @@
+<html>
+
+<body>
+
+<p id="demo"></p>
+
+<script>
+function CreateBase(num) {
+   
+  function AddingNum(numberToAdd) {
+    return numberToAdd+num;
+  }
+ 
+  return AddingNum;
+}
+var addSix = CreateBase(6);
+console.log(addSix(10));
+console.log(addSix(21));
+document.getElementById("demo").innerHTML = CreateBase(6);
+</script>
+
+</body>
+</html>

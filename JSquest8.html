@@ -1,0 +1,44 @@
+<html>
+<body>
+<label>Enter Month Name</label><br>
+<input id="input1" type="text" oninput="GetMonth(this.value)">
+
+<p id="ErrorMessage"></p>
+<p id="Message"></p>
+
+<script>
+function GetMonth(month) {
+
+    const message = document.getElementById("ErrorMessage");
+    message.innerHTML = "";
+    const FoundMessage = document.getElementById("Message");
+    FoundMessage.innerHTML = "";
+
+    monthArr = ['Jan','Feb','Mar','Apr','May','June','July','Aug','Sep','Oct','Nov','Dec'];
+
+    let i;
+    for(i=0;  i < monthArr.length;i++)
+    {
+        if(month == monthArr[i])
+        {
+            message.innerHTML = "Month Name Found" ;          
+            return;
+        }
+    }
+    var notFound = true;
+    try 
+        { 
+            if(notFound == true)  throw "month is not in Month List";
+        } 
+        catch(err) 
+        {
+            message.innerHTML = "" + err;
+        }
+}
+</script>
+
+</body>
+</html>
+
+
+

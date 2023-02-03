@@ -1,0 +1,25 @@
+<html>
+
+<body>
+
+<p id="demo"></p>
+
+<script>
+let total=0;
+let arrayAverage = (arr) => {
+    
+    for (let i = 0; i < arr.length; i++)
+    {       
+        total += arr[i];
+    }
+        let avg = total/arr.length;
+        return avg;
+}
+
+
+var numArray = [1, 2, 3, 4];
+document.getElementById("demo").innerHTML = arrayAverage(numArray);
+</script>
+
+</body>
+</html>

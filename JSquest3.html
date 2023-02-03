@@ -1,0 +1,30 @@
+<html>
+
+<body>
+
+<p id="demo"></p>
+
+<script>
+let dashTwixt2Evens = (num) => {
+    const str = num.toString();
+    var result = [str[0]];
+    for(let i = 1; i<str.length;i++)
+    {
+        if(str[i-1]%2===0 && str[i]%2===0)
+        {
+        result.push('-',str[i]);
+        }
+        else
+        {
+             result.push(str[i]);
+        }
+    }
+  console.log(result.join(''));
+
+}
+
+document.getElementById("demo").innerHTML = dashTwixt2Evens(245768);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+
+<body>
+
+<p id="demo"></p>
+
+<script>
+   var total = 0;
+let show = function (arr) {
+   for(let i=0; i<arr.length;i++){
+    total += arr[i];
+   }
+   let mean = total/arr.length;
+   return mean;
+};
+var numArray = [10, 24, 3, 7];
+document.getElementById("demo").innerHTML = show(numArray);
+</script>
+
+</body>
+</html>
